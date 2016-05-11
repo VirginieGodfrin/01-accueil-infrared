@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 11, ../scss/global.scss */
 body {
   font-family: "Oxygen", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   text-align: justify;
   text-justify: distribute;
   /*background: url("../img/backgroungTransAccueil.png");*/
@@ -108,41 +108,168 @@ a {
 .menu1 li:hover, .menu1 li:active {
   border-bottom: 3px solid #d81f1f;
 }
+@media screen and (min-width: 768px) {
+  /* line 32, ../scss/global.scss */
+  .menu1 {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 
-/* line 47, ../scss/global.scss */
+/* line 52, ../scss/global.scss */
+.header {
+  line-height: 400px;
+}
+/* line 54, ../scss/global.scss */
+.header img {
+  width: 200px;
+}
+@media screen and (min-width: 480px) {
+  /* line 52, ../scss/global.scss */
+  .header {
+    line-height: 450px;
+  }
+  /* line 59, ../scss/global.scss */
+  .header img {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 52, ../scss/global.scss */
+  .header {
+    line-height: 500px;
+  }
+  /* line 65, ../scss/global.scss */
+  .header img {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 52, ../scss/global.scss */
+  .header {
+    line-height: 550px;
+  }
+  /* line 71, ../scss/global.scss */
+  .header img {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* line 52, ../scss/global.scss */
+  .header {
+    line-height: 600px;
+  }
+  /* line 78, ../scss/global.scss */
+  .header img {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 52, ../scss/global.scss */
+  .header {
+    line-height: 700px;
+  }
+  /* line 84, ../scss/global.scss */
+  .header img {
+    width: 500px;
+  }
+}
+
+/* line 91, ../scss/global.scss */
 .menu2 {
   display: none;
 }
 
-/* line 52, ../scss/global.scss */
+@media screen and (min-width: 992px) {
+  /* line 95, ../scss/global.scss */
+  .menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 5%;
+    margin-bottom: 200px;
+  }
+  /* line 102, ../scss/global.scss */
+  .menu2 li {
+    font-size: 18px;
+    vertical-align: center;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #fff;
+    transition-property: border-bottom 2s linear 0.1s;
+  }
+  /* line 108, ../scss/global.scss */
+  .menu2 li:hover, .menu2 li:active {
+    border-bottom: 3px solid #d81f1f;
+  }
+  /* line 112, ../scss/global.scss */
+  .menu2 li:first-child {
+    border-bottom: 0px;
+  }
+  /* line 114, ../scss/global.scss */
+  .menu2 li:first-child img {
+    width: 200px;
+  }
+}
+/* line 121, ../scss/global.scss */
+.block_articles_centre {
+  margin-bottom: 200px;
+}
+/* line 123, ../scss/global.scss */
 .block_articles_centre h2 {
   color: #d81f1f;
   font-size: 24px;
+  margin-bottom: 200px;
 }
-/* line 56, ../scss/global.scss */
+@media screen and (max-width: 480px) {
+  /* line 123, ../scss/global.scss */
+  .block_articles_centre h2 {
+    font-size: 18px;
+  }
+}
+/* line 131, ../scss/global.scss */
 .block_articles_centre article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 50px;
 }
-/* line 61, ../scss/global.scss */
+/* line 139, ../scss/global.scss */
 .block_articles_centre h3, .block_articles_centre p {
   display: inline;
-  margin: 0 20%;
+}
+/* line 142, ../scss/global.scss */
+.block_articles_centre img {
+  width: 100px;
+  margin: 50px;
 }
 
-/* line 67, ../scss/global.scss */
+@media screen and (min-width: 768px) {
+  /* line 149, ../scss/global.scss */
+  .display_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px;
+  }
+  /* line 154, ../scss/global.scss */
+  .display_row article {
+    margin: 0px;
+    width: 30%;
+  }
+}
+/* line 163, ../scss/global.scss */
 .block_trapez {
   height: 80px;
   position: relative;
 }
-/* line 70, ../scss/global.scss */
+/* line 167, ../scss/global.scss */
 .block_trapez .trapez {
   width: 80%;
   height: 80px;
   background-color: #d81f1f;
 }
-/* line 75, ../scss/global.scss */
+/* line 172, ../scss/global.scss */
 .block_trapez h2 {
   color: #fff;
   font-size: 24px;
@@ -152,17 +279,54 @@ a {
   top: 25%;
 }
 
-/* line 86, ../scss/global.scss */
+/* line 182, ../scss/global.scss */
+.block_text_decale {
+  margin-top: 200px;
+}
+/* line 184, ../scss/global.scss */
 .block_text_decale h2 {
   font-size: 24px;
   margin: 10%;
 }
-/* line 90, ../scss/global.scss */
+/* line 188, ../scss/global.scss */
 .block_text_decale article {
   margin: 10%;
 }
+@media screen and (min-width: 768px) {
+  /* line 188, ../scss/global.scss */
+  .block_text_decale article {
+    margin: 0px;
+    width: 40%;
+  }
+}
 
-/* line 95, ../scss/global.scss */
+@media screen and (min-width: 768px) {
+  /* line 198, ../scss/global.scss */
+  .display_decal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1000px;
+    margin: 10%;
+  }
+  /* line 204, ../scss/global.scss */
+  .display_decal article {
+    padding: 2%;
+  }
+  /* line 207, ../scss/global.scss */
+  .display_decal article:first-of-type {
+    align-self: flex-end;
+  }
+  /* line 210, ../scss/global.scss */
+  .display_decal article:nth-of-type(2) {
+    align-self: center;
+  }
+  /* line 213, ../scss/global.scss */
+  .display_decal article:last-of-type {
+    align-self: flex-start;
+  }
+}
+/* line 223, ../scss/global.scss */
 footer {
   display: flex;
   flex-direction: row;
@@ -173,28 +337,28 @@ footer {
   padding: 5%;
 }
 
-/* line 105, ../scss/global.scss */
+/* line 233, ../scss/global.scss */
 .line-height {
   line-height: 30px;
 }
 
-/* line 110, ../scss/global.scss */
+/* line 238, ../scss/global.scss */
 .couriel a {
   color: #fff;
   vertical-align: top;
 }
-/* line 114, ../scss/global.scss */
+/* line 242, ../scss/global.scss */
 .couriel img {
   vertical-align: center;
 }
 
-/* line 118, ../scss/global.scss */
+/* line 246, ../scss/global.scss */
 .logo_couriel {
   width: 20px;
   height: 20px;
 }
 
-/* line 123, ../scss/global.scss */
+/* line 251, ../scss/global.scss */
 .postal {
   text-align: right;
 }
